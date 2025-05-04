@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+
 // This is a minimalist implementation with just the features we need
 // It's a placeholder for framer-motion since we're avoiding adding extra dependencies
 
