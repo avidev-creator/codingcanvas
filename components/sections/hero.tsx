@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Monitor, Code, PenTool } from "lucide-react";
 import { motion } from "motion/react";
-
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
 
