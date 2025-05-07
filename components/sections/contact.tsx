@@ -16,18 +16,20 @@ export default function Contact() {
     subject: "",
     message: "",
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       toast({
@@ -51,7 +53,8 @@ export default function Contact() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground text-lg">
-            Ready to start your project? Contact us today and let's bring your vision to life.
+            Ready to start your project? Contact us today and let's bring your
+            vision to life.
           </p>
         </div>
 
@@ -64,14 +67,19 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg mb-1">Email Us</h3>
-                  <p className="text-muted-foreground mb-2">For general inquiries and questions</p>
-                  <a href="mailto:hello@pixelperfect.com" className="text-primary hover:underline">
-                    hello@pixelperfect.com
+                  <p className="text-muted-foreground mb-2">
+                    For general inquiries and questions
+                  </p>
+                  <a
+                    href="mailto:codingcanvasinfo@gmail.com"
+                    className="text-primary hover:underline"
+                  >
+                    codingcanvasinfo@gmail.com
                   </a>
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="border border-border overflow-hidden transition-all duration-300 hover:shadow-md">
               <CardContent className="p-6 flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full text-primary flex-shrink-0">
@@ -79,14 +87,19 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg mb-1">Call Us</h3>
-                  <p className="text-muted-foreground mb-2">Mon-Fri from 9am to 6pm</p>
-                  <a href="tel:+15551234567" className="text-primary hover:underline">
-                    +1 (555) 123-4567
+                  <p className="text-muted-foreground mb-2">
+                    Mon-Fri from 9am to 6pm
+                  </p>
+                  <a
+                    href="tel:+918080082175"
+                    className="text-primary hover:underline"
+                  >
+                    (+91)80800 82175
                   </a>
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="border border-border overflow-hidden transition-all duration-300 hover:shadow-md">
               <CardContent className="p-6 flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full text-primary flex-shrink-0">
@@ -94,15 +107,18 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg mb-1">Visit Us</h3>
-                  <p className="text-muted-foreground mb-2">Our creative studio is located at</p>
+                  <p className="text-muted-foreground mb-2">
+                    Our creative studio is located at
+                  </p>
                   <address className="not-italic">
-                    123 Design Street<br />
-                    Creative City, 10001
+                    WW 125,Malibu town
+                    <br />
+                    Sector 47 122018
                   </address>
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="border border-border overflow-hidden transition-all duration-300 hover:shadow-md">
               <CardContent className="p-6 flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full text-primary flex-shrink-0">
@@ -110,27 +126,34 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg mb-1">Live Chat</h3>
-                  <p className="text-muted-foreground mb-2">Chat with our support team</p>
-                  <Button variant="link" className="px-0 text-primary hover:underline">
+                  <p className="text-muted-foreground mb-2">
+                    Chat with our support team
+                  </p>
+                  <Button
+                    variant="link"
+                    className="px-0 text-primary hover:underline"
+                  >
                     Start a conversation
                   </Button>
                 </div>
               </CardContent>
             </Card>
           </div>
-          
+
           <div className="lg:col-span-2">
             <Card className="border border-border">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                <h3 className="text-2xl font-semibold mb-6">
+                  Send Us a Message
+                </h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Your Name</Label>
-                      <Input 
-                        id="name" 
-                        name="name" 
-                        placeholder="John Doe" 
+                      <Input
+                        id="name"
+                        name="name"
+                        placeholder="John Doe"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -138,49 +161,69 @@ export default function Contact() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">Your Email</Label>
-                      <Input 
-                        id="email" 
-                        name="email" 
-                        type="email" 
-                        placeholder="john@example.com" 
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="john@example.com"
                         value={formData.email}
                         onChange={handleChange}
                         required
                       />
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="subject">Subject</Label>
-                    <Input 
-                      id="subject" 
-                      name="subject" 
-                      placeholder="How can we help you?" 
+                    <Input
+                      id="subject"
+                      name="subject"
+                      placeholder="How can we help you?"
                       value={formData.subject}
                       onChange={handleChange}
                       required
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
-                    <Textarea 
-                      id="message" 
-                      name="message" 
-                      placeholder="Tell us about your project..." 
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="Tell us about your project..."
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
                       required
                     />
                   </div>
-                  
-                  <Button type="submit" className="w-full" disabled={isSubmitting}>
+
+                  <Button
+                    type="submit"
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
                     {isSubmitting ? (
                       <span className="flex items-center">
-                        <svg className="animate-spin -ml-1 mr-3 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        <svg
+                          className="animate-spin -ml-1 mr-3 h-4 w-4 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
                         </svg>
                         Sending...
                       </span>
