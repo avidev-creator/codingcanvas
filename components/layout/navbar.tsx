@@ -5,13 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode-toggle";
-import { 
-  Menu, 
-  X, 
-  Monitor, 
-  Code, 
-  PenTool 
-} from "lucide-react";
+import { Menu, X, Monitor, Code, PenTool } from "lucide-react";
 
 const navLinks = [
   { href: "#services", label: "Services" },
@@ -38,8 +32,8 @@ export default function Navbar() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
-        scrolled 
-          ? "bg-background/80 backdrop-blur-md shadow-sm py-3" 
+        scrolled
+          ? "bg-background/80 backdrop-blur-md shadow-sm py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -47,7 +41,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 text-transparent bg-clip-text">
-CodingCanvas
+              CodingCanvas
             </span>
           </Link>
 
@@ -71,9 +65,9 @@ CodingCanvas
           {/* Mobile Menu Toggle */}
           <div className="flex items-center space-x-4 md:hidden">
             <ModeToggle />
-            <Button 
-              variant="ghost" 
-              size="icon" 
+            <Button
+              variant="ghost"
+              size="icon"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X /> : <Menu />}
@@ -100,7 +94,6 @@ CodingCanvas
               {link.label}
             </Link>
           ))}
-          <Button className="w-full">Get Started</Button>
         </nav>
       </div>
     </header>
