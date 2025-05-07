@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -39,11 +40,19 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 text-transparent bg-clip-text">
-              CodingCanvas
-            </span>
-          </Link>
+          <div className="flex ">
+            <Link href="/" className="flex items-center space-x-2">
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 text-transparent bg-clip-text">
+                CodingCanvas
+              </span>
+            </Link>{" "}
+            <Image
+              src="../../images/codingcanvaslogo.svg"
+              alt="company-logo"
+              width={70}
+              height={25}
+            />
+          </div>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center space-x-8">
