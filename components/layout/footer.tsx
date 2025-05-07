@@ -15,7 +15,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">CodingCanvas</h3>
+            {/* <h3 className="text-xl font-bold mb-4">CodingCanvas</h3> */}
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 text-transparent bg-clip-text">
+              CodingCanvas
+            </h3>
             <p className="text-muted-foreground mb-4">
               Crafting beautiful digital experiences with precision and
               creativity.
@@ -146,17 +149,17 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary mt-1" />
                 <span className="text-muted-foreground">
-                  123 Design Street, Creative City, 10001
+                  WW 125, Malibu town sector 47 122018
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-primary" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">(+91) 80800 82175</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary" />
                 <span className="text-muted-foreground">
-                  hello@pixelperfect.com
+                  codingcanvasinfo@gmail.com
                 </span>
               </div>
             </div>
@@ -164,7 +167,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>© {new Date().getFullYear()} PixelPerfect. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CodingCanvas. All rights reserved.</p>
         </div>
       </div>
     </footer>
