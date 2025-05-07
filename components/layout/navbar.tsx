@@ -66,9 +66,6 @@ export default function Navbar() {
               </Link>
             ))}
             <ModeToggle />
-            <Button className="bg-primary hover:bg-primary/90">
-              Get Started
-            </Button>
           </nav>
 
           {/* Mobile Menu Toggle */}
