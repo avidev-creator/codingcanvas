@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { 
-  Twitter, 
-  Instagram, 
-  Facebook, 
-  Linkedin, 
-  Mail, 
-  Phone, 
-  MapPin 
+import {
+  Twitter,
+  Instagram,
+  Facebook,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
 } from "lucide-react";
 
 export default function Footer() {
@@ -15,21 +15,34 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">PixelPerfect</h3>
+            <h3 className="text-xl font-bold mb-4">CodingCanvas</h3>
             <p className="text-muted-foreground mb-4">
-              Crafting beautiful digital experiences with precision and creativity.
+              Crafting beautiful digital experiences with precision and
+              creativity.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Linkedin size={20} />
               </a>
             </div>
@@ -39,19 +52,44 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Web Design</Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Web Design
+                </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Logo Creation</Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Logo Creation
+                </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Web Development</Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Web Development
+                </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">UI/UX Design</Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  UI/UX Design
+                </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">E-commerce Solutions</Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  E-commerce Solutions
+                </Link>
               </li>
             </ul>
           </div>
@@ -60,19 +98,44 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Home</Link>
+                <Link
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link>
+                <Link
+                  href="#about"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link href="#portfolio" className="text-muted-foreground hover:text-primary transition-colors">Portfolio</Link>
+                <Link
+                  href="#portfolio"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Portfolio
+                </Link>
               </li>
               <li>
-                <Link href="#testimonials" className="text-muted-foreground hover:text-primary transition-colors">Testimonials</Link>
+                <Link
+                  href="#testimonials"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Testimonials
+                </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link>
+                <Link
+                  href="#contact"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -92,7 +155,9 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary" />
-                <span className="text-muted-foreground">hello@pixelperfect.com</span>
+                <span className="text-muted-foreground">
+                  hello@pixelperfect.com
+                </span>
               </div>
             </div>
           </div>

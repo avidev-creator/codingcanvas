@@ -1,16 +1,24 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Toaster } from '@/components/ui/toaster';
-import { ThemeProvider } from '@/components/providers/theme-provider';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: 'Pixel Perfect - Web Design & Development Agency',
-  description: 'Expert web design, logo creation, and development services for modern businesses',
+  title: "Coding Canvas - Web Design & Development Agency",
+  description:
+    "Expert web design, logo creation, and development services for modern businesses",
+  icons: {
+    icon: {
+      url: "/images/codingcanvaslogo.svg",
+      type: "image/svg+xml",
+      sizes: "any",
+    },
+  },
 };
 
 export default function RootLayout({
